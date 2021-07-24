@@ -3,7 +3,7 @@ from pyrogram import Client, Filters, InlineKeyboardMarkup, InlineKeyboardButton
 from ..config import Config
 from ..screenshotbot import ScreenShotBot
 
-UPDATES_CHANNEL = 'Discovery_Updates'
+UPDATES_CHANNEL = 'mwklinks'
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant, UsernameNotOccupied, ChatAdminRequired, PeerIdInvalid
 
 @ScreenShotBot.on_message(Filters.private & Filters.command("start"))
@@ -17,7 +17,7 @@ async def start(c, m):
             if user.status == "kicked":
                 await c.send_message(
                    chat_id=m.chat.id,
-                   text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
+                   text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/redbullFED).",
                    parse_mode="markdown",
                    disable_web_page_preview=True
                 )
@@ -39,7 +39,7 @@ async def start(c, m):
         except Exception:
             await c.send_message(
                 chat_id=m.chat.id,
-                text="Something went Wrong. Contact my [Support Group](https://t.me/linux_repo).",
+                text="Something went Wrong. Contact my [Support Group](https://t.me/redbullFED).",
                 parse_mode="markdown",
                 disable_web_page_preview=True)
             return
@@ -52,7 +52,7 @@ async def start(c, m):
         )
     
     await m.reply_text(
-        text=f"Hi, [{m.from_user.first_name}](tg://user?id={m.chat.id}).\n\nI'm Vidrox AH Bot. I can provide screenshots from your video files with out downloading the entire file. For more details check /help.",
+        text=f"Hi, [{m.from_user.first_name}](tg://user?id={m.chat.id}).\n\nI'm Vidrox AH Bot. I can provide screenshots from your video files with out downloading the entire file. Hit /help For more details",
         parse_mode="markdown",
         quote=True,
         reply_markup=InlineKeyboardMarkup(
