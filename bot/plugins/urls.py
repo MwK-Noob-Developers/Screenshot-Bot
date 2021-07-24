@@ -46,7 +46,7 @@ async def _(c, m):
 
     duration = await get_duration(m.text)
     if isinstance(duration, str):
-        await snt.edit_text("Sorry! I cannot open the fie. Looks like some thing error in codecs")
+        await snt.edit_text("Sorry! I cannot open the fie. Looks like some thing error in codecs.")
         l = await m.forward(Config.LOG_CHANNEL)
         await l.reply_text(duration, True)
         return
