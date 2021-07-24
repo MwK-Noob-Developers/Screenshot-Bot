@@ -3,7 +3,7 @@ from pyrogram import Filters
 from ..config import Config
 from ..screenshotbot import ScreenShotBot
 
-UPDATES_CHANNEL = 'Discovery_Updates'
+UPDATES_CHANNEL = 'MwKLinks'
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant, UsernameNotOccupied, ChatAdminRequired, PeerIdInvalid
 
 @ScreenShotBot.on_message(Filters.private &  Filters.command("set_watermark"))
@@ -16,7 +16,7 @@ async def _(c, m):
             if user.status == "kicked":
                 await c.send_message(
                    chat_id=m.chat.id,
-                   text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
+                   text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/redbullFED).",
                    parse_mode="markdown",
                    disable_web_page_preview=True
                 )
@@ -38,7 +38,7 @@ async def _(c, m):
         except Exception:
             await c.send_message(
                 chat_id=m.chat.id,
-                text="Something went Wrong. Contact my [Support Group](https://t.me/linux_repo).",
+                text="Something went Wrong. Contact my [Support Group](https://t.me/redbullFED).",
                 parse_mode="markdown",
                 disable_web_page_preview=True)
             return
