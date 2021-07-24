@@ -52,18 +52,13 @@ async def start(c, m):
         )
     
     await m.reply_text(
-        text=f"Hi, [{m.from_user.first_name}](tg://user?id={m.chat.id}).\n\nI'm Vidrox AH Bot. I can provide screenshots from your video files with out downloading the entire file. Hit /help For more details",
+        text=f"Hi, [{m.from_user.first_name}](tg://user?id={m.chat.id}).\n\nI'm a simple bot by <b>Team MwK<\b>. I can provide screenshots from your video files with out downloading the entire file. Hit /help For more details",
         parse_mode="markdown",
         quote=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [
-                    InlineKeyboardButton('Updates Channel', url='https://t.me/Discovery_Updates'),
-                    InlineKeyboardButton('Support Group', url='https://t.me/linux_repo')
-                ],
-                [
-                    InlineKeyboardButton('Developer', url='https://t.me/AbirHasan2005')
-                ]
+             [InlineKeyboardButton("Updates", url="https://t.me/mwklinks"), InlineKeyboardButton("Support", url="https://t.me/redbullfed")],
+             [InlineKeyboardButton("Developer", url="https://t.me/shamilhabeeb"), InlineKeyboardButton("Other Bots", url="https://t.me/shamilnelli/6")]
             ]
         )
     )
